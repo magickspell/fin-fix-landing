@@ -1,0 +1,448 @@
+@font-face {
+    font-family: "Euclid";
+    src: url("./src/font/Euclid Circular A Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Euclid, sans-serif;
+    color: #29374E;
+}
+
+i {
+    color: #0962E8;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* header */
+
+header {
+    background: #CBECFF;
+    position: relative;
+    height: 680px;
+}
+
+.header_wrapper {
+    min-width: 320px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 60px;
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.lang_btns {
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    font-size: 14px;
+}
+
+.lang_btns > button:first-child {
+    background: #FFFFFF;
+    border-radius: 12px;
+    width: 26px;
+    height: 24px;
+    outline: none;
+    border: none;
+    color: #0962E8;
+    cursor: pointer;
+}
+
+.lang_btns > button:last-child {
+    background: transparent;
+    border-radius: 12px;
+    width: 26px;
+    height: 24px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header_main-content {
+    display: flex;
+}
+
+.logo {
+    max-width: 680px;
+}
+.logo > img {
+    min-width: 320px;
+    max-width: 100%;
+    max-height: 680px;
+    position: relative;
+    left: 160px;
+}
+
+.header_main-content > article {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.header_main-content > article > h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.header_main-content > article > h1 > span {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 4px 12px;
+    color: #0962E8;
+}
+
+.header_main-content > article > p {
+    font-size: 22px;
+    line-height: 130%;
+    margin-bottom: 36px;
+}
+
+.header_main-content > article > button {
+    width: 199px;
+    height: 52px;
+    background: #0962E8;
+    border-radius: 12px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.header_main-content > article > button:hover {
+    border: 5px solid deepskyblue;
+    transform: scale(1.2);
+}
+
+.profits_wrapper {
+    position: relative;
+    top: -50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.profits_wrapper > article {
+    position: relative;
+    height: 120px;
+    max-width: 240px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.profits_wrapper > article:hover {
+    transform: scale(1.05);
+}
+
+.profits_wrapper > article > p {
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 80%;
+    font-weight: 700;
+}
+
+.profits_wrapper > article > div {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #EFF9FF;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* content */
+.content_title {
+    margin: 120px auto 40px;
+    width: 50%;
+    font-size: 38px;
+    line-height: 130%;
+    text-align: center;
+}
+.content_title > span {
+    color: #0962E8;
+}
+.concepts_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.concepts_wrapper > article {
+    position: relative;
+    width: 500px;
+    height: 320px;
+    background: #E9F6FF;
+    border-radius: 30px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.concepts_wrapper > article:hover {
+    transform: scale(1.05);
+}
+
+.concepts_wrapper > article > img {
+    max-width: 220px;
+    position: relative;
+    left: 220px;
+    bottom: 82px;
+}
+.concepts_wrapper > article > h4,
+.concepts_wrapper > article > p {
+    width: 50%;
+    margin-bottom: 12px;
+}
+
+/* benefits */
+
+.benefits_wrapper {
+    display: flex;
+    margin: 120px auto 0;
+    padding-bottom: 60px;
+    max-width: 1400px;
+}
+
+.benefits_target {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.benefits_target > h2{
+    font-size: 38px;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.benefits_target > h2 > span {
+    color: #0962E8;
+}
+
+.benefits_target > p {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 36px;
+    max-width: 400px;
+}
+
+.benefits_target > button {
+    background: #0962E8;
+    border-radius: 12px;
+    width: 200px;
+    height: 52px;
+    color: white;
+    outline: 0;
+    border: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.benefits_target > button:hover {
+    border: 5px solid deepskyblue;
+    transform: scale(1.1);
+}
+
+.benefits_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50%;
+}
+.benefits_items  > article {
+    min-width: 160px;
+    max-width: 232px;
+    height: 140px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 12px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.benefits_items  > article:hover {
+    transform: scale(1.05);
+}
+
+.benefits_items  > article > p {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 700;
+}
+
+.benefits_items  > article > div {
+    background: #EFF9FF;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* mobile */
+@media (max-width: 968px) {
+    header {
+        height: min-content;
+    }
+
+    .header_wrapper {
+        padding: 0;
+    }
+
+    .header_main-content {
+        flex-direction: column-reverse;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .header_main-content > article > button {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .logo {
+        max-width: 100%;
+    }
+    .logo > img {
+        min-width: 320px;
+        max-width: 680px;
+        max-height: 680px;
+        position: relative;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    .header_main-content > article {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 40px;
+    }
+
+    .profits_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        width: 90%;
+        margin: 20px auto;
+        padding-bottom: 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .profits_wrapper > article {
+        height: 140px;
+        width: 90%;
+    }
+
+    .content_title {
+        margin: 32px auto 20px;
+        width: 90%;
+    }
+
+    /* benefits */
+    .benefits_wrapper {
+        flex-direction: column;
+        margin: 40px auto 0;
+    }
+
+    .benefits_target {
+        width: 90%;
+        margin: 0 auto
+    }
+    .benefits_target > h2{
+        text-align: center;
+    }
+
+    .benefits_target > p {
+        max-width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .benefits_target > button {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .benefits_items {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .benefits_items  > article {
+        min-width: 160px;
+        max-width: 232px;
+        height: 140px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 12px;
+        box-sizing: border-box;
+    }
+}
+
+/* for 320px */
+@media (max-width: 640px) {
+    .concepts_wrapper {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        min-width: 320px;
+    }
+    .concepts_wrapper > article {
+        position: relative;
+        width: 90%;
+        height: min-content;
+        margin: 0 auto;
+        background: #E9F6FF;
+        border-radius: 30px;
+        padding: 12px 20px 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .concepts_wrapper > article > img {
+        max-width: 220px;
+        position: relative;
+        left: 0;
+        bottom: -8px;
+        margin: 0 auto;
+    }
+    .concepts_wrapper > article > h4,
+    .concepts_wrapper > article > p {
+        width: 90%;
+        margin: 0 auto 12px;
+    }
+}
